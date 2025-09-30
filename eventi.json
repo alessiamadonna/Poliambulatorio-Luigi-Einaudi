@@ -1,0 +1,17 @@
+[
+    {
+      "Titolo": "Open Day Poliambulatorio",
+      "Descrizione": "Visita gratuita il nostro centro medico.",
+      "Data": "2025-10-10",
+      "Prossimo": "true",
+      "Foto": "images/open-day.jpg"
+    },
+    {
+      "Titolo": "Conferenza sulla salute",
+      "Descrizione": "Seminario su prevenzione e benessere.",
+      "Data": "2025-11-05",
+      "Prossimo": "false",
+      "Foto": "images/conferenza.jpg"
+    }
+  ]
+  

@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Terapie - Poliambulatorio Luigi Einaudi</title>
+<link rel="stylesheet" href="styles.css" />
+<body>
+
+<!-- Barra superiore con telefono -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span class="phone">
+      📞 <a href="tel:+390173742501">CONTATTACI AL NUMERO 0173 742501</a>
+    </span>
+  </div>
+</div>
+
+<!-- Header principale -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="header-logo-link">
+      <img src="logo.jpg" alt="Logo Poliambulatorio" class="header-logo" />
+    </a>
+
+   <nav class="main-nav" id="mainNav">
+     <a href="visite.html">Visite specialistiche</a>
+     <a href="index.html#doctors">Dottori</a>
+     <a href="diagnostica.html">Diagnostica</a>
+     <a href="terapie.html" class="current">Terapie</a>
+     <a href="servizi.html">Servizi</a>
+     <a href="eventi.html">Eventi</a>
+     <a href="index.html#location">Info</a>
+     <a href="#contact" class="btn btn-accent" id="bookBtn">Prenota</a>
+   </nav>
+
+    <!-- Burger menu per mobile -->
+    <button class="burger" id="burger" aria-label="menu">
+      <div class="burger-icon">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+    </button>
+  </div>
+</header>
+
+<main class="terapie-main">
+
+<!-- Header con titolo e descrizione -->
+<section class="terapie-header">
+  <div class="container">
+    <h2>Terapie</h2>
+    <p>Scopri i nostri trattamenti specializzati, dalla fisioterapia ai test diagnostici fino alle terapie alternative, per il tuo benessere completo.</p>
+  </div>
+</section>
+
+<!-- Selezione categorie -->
+<section class="category-selection">
+  <div class="container">
+    
+    <!-- Griglia categorie iniziali (3 grandi card) -->
+    <div class="category-grid" id="categoryGrid">
+      
+      <div class="category-card fisica" data-category="fisica">
+        <div class="category-icon">
+          <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-.14 0-.27.01-.4.04-.39.08-.74.28-1.01.55-.18.18-.33.4-.43.65C3.06 4.46 3 4.72 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM12 2.75c.22 0 .41.1.55.26.14.16.2.37.2.59s-.06.43-.2.59c-.14.16-.33.26-.55.26s-.41-.1-.55-.26c-.14-.16-.2-.37-.2-.59s.06-.43.2-.59c.14-.16.33-.26.55-.26zM19 19H5V5h2v1c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V5h2v14z"/>
+            <path d="M9 8h2v8H9V8zm4 0h2v8h-2V8z"/>
+          </svg>
+        </div>
+        <h3>Terapia fisica</h3>
+        <p>Trattamenti riabilitativi e fisioterapici per il recupero delle funzioni motorie e il benessere muscolo-scheletrico</p>
+      </div>
+
+      <div class="category-card test" data-category="test">
+        <div class="category-icon">
+          <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+          </svg>
+        </div>
+        <h3>Terapie e test</h3>
+        <p>Valutazioni diagnostiche e test funzionali per identificare problematiche e monitorare i progressi terapeutici</p>
+      </div>
+
+      <div class="category-card alternative" data-category="alternative">
+        <div class="category-icon">
+          <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        </div>
+        <h3>Terapie alternative</h3>
+        <p>Approcci terapeutici innovativi e tecniche specializzate per il trattamento del dolore e il benessere generale</p>
+      </div>
+
+    </div>
+
+    <!-- Barra categorie ridotta (appare dopo selezione) -->
+    <div class="category-bar" id="categoryBar">
+      <button class="category-btn fisica" data-category="fisica">
+        <svg width="20" height="20" fill="currentColor">
+          <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1s-2.4.84-2.82 2H5c-.14 0-.27.01-.4.04-.39.08-.74.28-1.01.55-.18.18-.33.4-.43.65C3.06 4.46 3 4.72 3 5v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM12 2.75c.22 0 .41.1.55.26.14.16.2.37.2.59s-.06.43-.2.59c-.14.16-.33.26-.55.26s-.41-.1-.55-.26c-.14-.16-.2-.37-.2-.59s.06-.43.2-.59c.14-.16.33-.26.55-.26zM19 19H5V5h2v1c0 .55.45 1 1 1h8c.55 0 1-.45 1-1V5h2v14z"/>
+        </svg>
+        Terapia fisica
+      </button>
+      <button class="category-btn test" data-category="test">
+        <svg width="20" height="20" fill="currentColor">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+        </svg>
+        Terapie e test
+      </button>
+      <button class="category-btn alternative" data-category="alternative">
+        <svg width="20" height="20" fill="currentColor">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+        Terapie alternative
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contenuto terapie - Terapia fisica -->
+<div class="therapy-content" id="fisica">
+  <div class="container">
+    <div class="therapy-list">
+      
+      <div class="therapy-item fisica" data-therapy="fisioterapia">
+        <div class="therapy-image">
+          <img src="images/fisioterapia.jpg" alt="Fisioterapia" />
+        </div>
+        <div class="therapy-info">
+          <h3>Fisioterapia</h3>
+          <p>La Fisioterapia si occupa della riabilitazione in campo ortopedico, neurologico e cognitivo.</p>
+          <button class="therapy-discover">Scopri di più</button>
+        </div>
+      </div>
+
+      <div class="therapy-item fisica" data-therapy="podologia">
+        <div class="therapy-image">
+          <img src="images/podologia.jpg" alt="Massoterapia" />
+        </div>
+        <div class="therapy-info">
+          <h3>Podologia</h3>
+          <p>La Podologia studia la fisiologia, la patologia e i trattamenti del piede.</p>
+          <button class="therapy-discover">Scopri di più</button>
+        </div>
+      </div>
+
+      <div class="therapy-item fisica" data-therapy="logopedia">
+        <div class="therapy-image">
+          <img src="images/logopedia.jpg" alt="Riabilitazione" />
+        </div>
+        <div class="therapy-info">
+          <h3>Logopedia</h3>
+          <p>La Fisioterapia si occupa della riabilitazione in campo ortopedico, neurologico e cognitivo.</p>
+          <button class="therapy-discover">Scopri di più</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Contenuto terapie - Terapie e test -->
+<div class="therapy-content" id="test">
+  <div class="container">
+    <div class="therapy-list">
+      
+      <div class="therapy-item test" data-therapy="allergologia">
+        <div class="therapy-image">
+          <img src="images/allergologia.jpg" alt="Test funzionali" />
+        </div>
+        <div class="therapy-info">
+          <h3>Test allergologici</h3>
+          <p>L’Allergologia previene, tratta e diagnostica le allergie, ovvero l’insieme delle reazioni che l’organismo mette in atto quando entra in contatto con particolari sostanze estranee, definite “allergeni”.</p>
+          <button class="therapy-discover">Scopri di più</button>
+        </div>
+      </div>
+
+      <div class="therapy-item test" data-therapy="dietistica">
+        <div class="therapy-image">
+          <img src="images/dietistica.jpg" alt="Valutazione posturale" />
+        </div>
+        <div class="therapy-info">
+          <h3>Programmi nutrizionali</h3>
+          <p>L’obiettivo della Dietistica, come scienza medica, è quello di inserire un nuovo modo di alimentarsi nell’ambito di un corretto stile di vita e fare in modo che le nozioni acquisite vengano mantenute nel tempo.</p>
+          <button class="therapy-discover">Scopri di più</button>
+        </div>
+      </div>
+
+      <div class="therapy-item test" data-therapy="intolleranze">
+        <div class="therapy-image">
+          <img src="images/allergie.jpg" alt="Test biomeccanici" />
+        </div>
+        <div class="therapy-info">
+          <h3>Test intolleranze alimentari</h3>
+          <p>É un esame che rileva le reazioni avverse a specifici alimenti e si basa generalmente sulla misurazione degli anticorpi IgG attraverso un prelievo di sangue. Questi test aiutano a identificare cibi che possono causare disturbi digestivi, mal di testa, stanchezza o dermatiti, come il gonfiore addominale e la diarrea, che sono sintomi comuni ma poco specifici.</p>
+        </div>
+      </div>
+
+      <div class="therapy-item test" data-therapy="scleroterapia">
+        <div class="therapy-image">
+          <img src="images/scleroterapia.jpg" alt="Screening motorio" />
+        </div>
+        <div class="therapy-info">
+          <h3>Scleroterapia</h3>
+          <p>É un trattamento medico poco invasivo che consiste nell'iniettare una sostanza sclerosante all'interno di capillari dilatati (teleangectasie) e piccole vene varicose per indurne la chiusura e il successivo riassorbimento, migliorando sia l'aspetto estetico che la funzionalità vascolare degli arti inferiori. </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Contenuto terapie - Terapie alternative -->
+<div class="therapy-content" id="alternative">
+  <div class="container">
+    <div class="therapy-list">
+      
+      <div class="therapy-item alternative" data-therapy="agopuntura">
+        <div class="therapy-image">
+          <img src="images/agopuntura.jpg" alt="Terapia manuale" />
+        </div>
+        <div class="therapy-info">
+          <h3>Agopuntura</h3>
+          <p>L’Agopuntura è una tecnica terapeutica che consiste nel trattamento e nella prevenzione di varie patologie.</p>
+          <button class="therapy-discover">Scopri di più</button>
+        </div>
+      </div>
+
+      <div class="therapy-item alternative" data-therapy="omeopatia">
+        <div class="therapy-image">
+          <img src="images/omeopatia.jpg" alt="Dry needling" />
+        </div>
+        <div class="therapy-info">
+          <h3>Omeopatia</h3>
+          <p>L’Omeopatia, come medicina non convenzionale, propone un tipo di cura che guarda alla totalità della persona e non solo alla malattia in sé.</p>
+          <button class="therapy-discover">Scopri di più</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+</main>
+
+<!-- Modal per dettagli terapie -->
+<div class="therapy-modal" id="therapyModal">
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose">×</button>
+    <div class="modal-header">
+      <h3 id="modalTitle">Titolo Terapia</h3>
+      <span class="category-badge" id="modalCategory">Categoria</span>
+    </div>
+    <div class="modal-body" id="modalBody">
+      <!-- Contenuto dinamico -->
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-left">
+      <h3>Poliambulatorio Luigi Einaudi</h3>
+      <p>Via Torino 118/B<br>12063 Dogliani (CN)<br>Tel: 0173 742501</p>
+    </div>
+    <div class="footer-right">
+      <h4>Orari di apertura</h4>
+      <p>Lun - Ven: 8:30 — 12:30 / 14:00 — 20:00<br>Sab: 8:30 — 12:30</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/p/Poliambulatorio-Luigi-Einaudi-100014016342183/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="icons/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/TUA_PAGINA" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="icons/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.doctolib.it/TUA_PAGINA" target="_blank" rel="noopener noreferrer" aria-label="Doctolib">
+          <img src="icons/doctolib.png" alt="Doctolib">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Poliambulatorio Luigi Einaudi - P.I. 03611100045 - <a href="/privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
+</body>
+<script src="scripts.js"></script>
+</html>
+        

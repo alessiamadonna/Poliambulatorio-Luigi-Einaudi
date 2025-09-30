@@ -1,0 +1,392 @@
+
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Poliambulatorio Luigi Einaudi</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Barra superiore con telefono -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span class="phone">
+      📞 <a href="tel:+390173000000">CONTATTACI AL NUMERO 0173 000000</a>
+    </span>
+  </div>
+</div>
+
+<!-- Header principale: logo + navbar -->
+<header class="site-header">
+  <div class="container header-inner">
+    <!-- Logo -->
+    <a href="#hero" class="header-logo-link">
+      <img src="logo.jpg" alt="Logo Poliambulatorio" class="header-logo" />
+    </a>
+
+   <nav class="main-nav" id="mainNav">
+  <a href="visite.html">Visite specialistiche</a>
+  <a href="#doctors">Dottori</a>
+  <a href="diagnostica.html">Diagnostica</a>
+  <a href="terapie.html">Terapie</a>
+  <a href="servizi.html">Servizi</a>
+  <a href="eventi.html">Eventi</a>
+  <a href="#location">Info</a>
+  <a href="#contact" class="btn btn-accent" id="bookBtn">Prenota</a>
+   </nav>
+
+    <!-- Burger menu per mobile -->
+    <button class="burger" id="burger" aria-label="menu">
+      <div class="burger-icon">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </div>
+    </button>
+  </div>
+</header>
+
+
+<main>
+<br>
+<br>
+<br>
+<br>
+<section class="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Poliambulatorio <br> <span class="highlight-word">Luigi Einaudi</span></h1>
+      <p class="subtitle">Centro Medico all'avanguardia per le visite specialistiche a Dogliani</p>
+      <p class="subsubtitle">Ci impegniamo ad offrirti Servizi sanitari di alta qualità.</p>
+      <p class="hero-description">
+        Visite specialistiche, esami diagnostici, fisioterapia e servizi professionali infermieristici. 
+        Un trattamento unico con strumentazione moderna e professionisti qualificati.
+      </p>
+    </div>
+
+    <div class="hero-visual">
+      <!-- Elementi decorativi professionali -->
+      <div class="medical-grid-bg">
+        <div class="grid-line vertical"></div>
+        <div class="grid-line vertical"></div>
+        <div class="grid-line horizontal"></div>
+        <div class="grid-line horizontal"></div>
+      </div>
+      
+      <!-- Frame moderno per foto ambulatorio -->
+      <div class="hero-visual-container">
+        <div class="photo-frame-wrapper">
+          <div class="photo-frame">
+            <!-- SOSTITUIRE src con il percorso della tua foto -->
+            <img src="images/studio.png" alt="Interno Poliambulatorio Luigi Einaudi" class="ambulatorio-photo" />
+            
+            <!-- Decorazioni corner -->
+            <div class="frame-corner top-left"></div>
+            <div class="frame-corner top-right"></div>
+            <div class="frame-corner bottom-left"></div>
+            <div class="frame-corner bottom-right"></div>
+          </div>
+          
+          <!-- ECG decorativo sotto la foto -->
+          <div class="ecg-decoration">
+            <svg viewBox="0 0 300 60" class="ecg-trace">
+              <path d="M0,30 L80,30 L90,10 L100,50 L110,20 L120,40 L130,30 L300,30" stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quick-links">
+  <div class="container">
+
+    <!-- Titolo e descrizione modernizzati -->
+    <div class="quick-links-header">
+      <h2>I nostri servizi principali</h2>
+      <p>Accedi velocemente alle aree principali del Poliambulatorio: visite, diagnostica, terapie e servizi.</p>
+    </div>
+
+    <div class="quick-links-grid">
+      <a href="visite.html" class="quick-link-card pink">
+        <div class="icon">
+          <!-- Icona stetoscopio -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3h-1v2a3 3 0 1 1-6 0V3h-2v2a5 5 0 0 0 10 0V3zM9 3H7v2a7 7 0 0 0 14 0V3h-2v2a5 5 0 0 1-10 0V3zM5 4H3v6a5 5 0 0 0 10 0V9h-2v1a3 3 0 0 1-6 0V4z"/><path d="M20 14a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/></svg>
+        </div>
+        <h3>Visite specialistiche</h3>
+      </a>
+
+      <a href="diagnostica.html" class="quick-link-card orange">
+        <div class="icon">
+          <!-- Icona microscopio -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 24 24"><path d="M9 2h2v7H9V2zm5.293.293 1.414 1.414-2.586 2.586-1.414-1.414L14.293 2.293zM4 11a4 4 0 0 0 8 0H4zm16 2h-5v2h5a2 2 0 0 1 0 4H7a2 2 0 0 1 0-4h5v-2H7a4 4 0 0 0 0 8h13a4 4 0 0 0 0-8z"/></svg>
+        </div>
+        <h3>Diagnostica</h3>
+      </a>
+
+      <a href="terapie.html" class="quick-link-card green">
+        <div class="icon">
+          <!-- Icona pillola -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 24 24"><path d="M4.929 4.929a6.999 6.999 0 0 1 9.9 0l4.242 4.242a6.999 6.999 0 0 1-9.9 9.9L4.929 14.83a6.999 6.999 0 0 1 0-9.9zm1.414 1.414a4.999 4.999 0 0 0 0 7.072l4.242 4.242a4.999 4.999 0 0 0 7.072-7.072L13.415 6.343a4.999 4.999 0 0 0-7.072 0z"/><path d="M8.464 7.05 16.95 15.536l-1.414 1.414L7.05 8.464z"/></svg>
+        </div>
+        <h3>Terapie</h3>
+      </a>
+
+      <a href="servizi.html" class="quick-link-card pink">
+        <div class="icon">
+          <!-- Icona ingranaggi -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" viewBox="0 0 24 24"><path d="M19.14 12.936a7.963 7.963 0 0 0 .06-.936 7.963 7.963 0 0 0-.06-.936l2.037-1.58a.5.5 0 0 0 .12-.638l-1.928-3.34a.5.5 0 0 0-.607-.22l-2.397.96a7.994 7.994 0 0 0-1.62-.936l-.36-2.54A.5.5 0 0 0 14.9 2h-3.8a.5.5 0 0 0-.497.41l-.36 2.54a7.994 7.994 0 0 0-1.62.936l-2.397-.96a.5.5 0 0 0-.607.22L3.69 8.546a.5.5 0 0 0 .12.638l2.037 1.58a7.963 7.963 0 0 0-.06.936c0 .318.021.63.06.936l-2.037 1.58a.5.5 0 0 0-.12.638l1.928 3.34a.5.5 0 0 0 .607.22l2.397-.96c.493.387 1.04.705 1.62.936l.36 2.54a.5.5 0 0 0 .497.41h3.8a.5.5 0 0 0 .497-.41l.36-2.54c.58-.231 1.127-.549 1.62-.936l2.397.96a.5.5 0 0 0 .607-.22l1.928-3.34a.5.5 0 0 0-.12-.638l-2.037-1.58zM12 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+        </div>
+        <h3>Servizi</h3>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="doctors" class="section doctors-section">
+  <div class="container">
+    <!-- Titolo e descrizione modernizzati -->
+    <div class="doctors-header">
+      <h2 class="fade-in">Il nostro team</h2>
+      <p class="fade-in">
+        I nostri medici altamente qualificati sono a disposizione per offrire visite specialistiche, diagnosi accurate e percorsi terapeutici personalizzati.
+      </p>
+    </div>
+
+    <div class="doctors-slider-wrapper">
+      <!-- Freccia precedente -->
+      <button class="slider-btn prev-btn">‹</button>
+
+      <!-- Slider -->
+      <div class="doctors-slider">
+        <article class="doctor-card">
+          <h3>Dr. Mario Rossi</h3>
+          <p>Cardiologo – Ambulatorio Cardiologia</p>
+          <a class="pdf-link" href="/pdfs/mario-rossi-cv.pdf" download="CV_Mario_Rossi.pdf">Scarica CV</a>
+        </article>
+        <article class="doctor-card">
+          <h3>Dott.ssa Anna Bianchi</h3>
+          <p>Ginecologa – Ecografie ostetriche</p>
+          <a class="pdf-link" href="/pdfs/anna-bianchi-cv.pdf" download="CV_Anna_Bianchi.pdf">Scarica CV</a>
+        </article>
+        <article class="doctor-card">
+          <h3>Dr. Luca Verdi</h3>
+          <p>Ortopedico – Ambulatorio Ortopedia</p>
+          <a class="pdf-link" href="/pdfs/luca-verdi-cv.pdf" download="CV_Luca_Verdi.pdf">Scarica CV</a>
+        </article>
+        <article class="doctor-card">
+          <h3>Dott.ssa Elisa Neri</h3>
+          <p>Dermatologa – Ambulatorio Dermatologia</p>
+          <a class="pdf-link" href="/pdfs/elisa-neri-cv.pdf" download="CV_Elisa_Neri.pdf">Scarica CV</a>
+        </article>
+        <!-- aggiungi altre card dottori qui -->
+      </div>
+
+      <!-- Freccia successiva -->
+      <button class="slider-btn next-btn">›</button>
+    </div>
+  </div>
+</section>
+
+<!-- SEZIONE PROSSIMI EVENTI -->
+<section class="prossimi-eventi-section">
+  <div class="container">
+    <!-- Header sezione -->
+    <div class="eventi-section-header">
+      <h2>Prossimi Eventi</h2>
+      <p>Non perdere i nostri appuntamenti dedicati alla salute e al benessere</p>
+    </div>
+
+    <!-- Container eventi -->
+    <div id="prossimi-eventi-list" class="prossimi-eventi-grid">
+      <div class="loading-state">
+        <div class="loading-spinner"></div>
+        <p>Caricamento eventi in corso...</p>
+      </div>
+    </div>
+
+    <!-- Bottone scopri tutti gli eventi -->
+    <div class="eventi-cta">
+      <a href="eventi.html" class="btn-eventi">Scopri tutti gli eventi</a>
+    </div>
+  </div>
+</section>
+
+ <!-- info -->
+ <section id="location" class="section location-section">
+  <div class="container">
+
+    <!-- Titolo e descrizione -->
+    <div class="location-header fade-in">
+      <h2>Informazioni</h2>
+      <p>Poliambulatorio Luigi Einaudi – Tutte le informazioni utili per raggiungerci e contattarci.</p>
+    </div>
+
+    <!-- Layout mappa + box orari -->
+    <div class="location-row">
+      <!-- Mappa -->
+      <div class="location-map fade-in">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2843.980257221796!2d7.934873711859656!3d44.536036794765764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d2a4e075782f61%3A0xb255acd51f3d5d62!2sVia%20Torino%2C%20118b%2C%2012063%20Dogliani%20CN!5e0!3m2!1sen!2sit!4v1758144955328!5m2!1sen!2sit"
+          width="100%" 
+          height="350" 
+          style="border:0;" 
+          allowfullscreen 
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Box orari -->
+      <div class="opening-hours-card fade-in">
+        <h4>Orari di apertura</h4>
+        <div class="day">
+          <p class="day-name">Lun - Ven</p>
+          <p class="day-time">8:30 – 12:30 / 14:00 – 20:00</p>
+        </div>
+        <div class="day">
+          <p class="day-name">Sab</p>
+          <p class="day-time">8:30 – 12:30</p>
+        </div>
+        <div class="day">
+          <p class="day-name">Dom</p>
+          <p class="day-time">Chiuso</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- Telefono -->
+    <div class="phone-original">
+      <a href="tel:+390173742501" class="phone-badge">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path d="M3.654 1.328a.678.678 0 0 1 .738-.17l2.4.96c.329.132.494.484.392.82l-.8 2.4a.678.678 0 0 1-.631.438l-.534.04a11.184 11.184 0 0 0 5.516 5.516l.04-.534a.678.678 0 0 1 .438-.631l2.4-.8c.336-.102.688.063.82.392l.96 2.4a.678.678 0 0 1-.17.738l-1.2 1.2a1.745 1.745 0 0 1-1.958.398c-2.05-.82-4.086-2.856-4.906-4.906a1.745 1.745 0 0 1 .398-1.958l1.2-1.2z"/>
+        </svg>
+        Contattaci al numero 0173 742501
+      </a>
+    </div>
+    
+
+  </div>
+</section>
+
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div class="footer-left">
+      <h3>Poliambulatorio Luigi Einaudi</h3>
+      <p>Via Torino 118/B<br>12063 Dogliani (CN)<br>Tel: 0173 742501</p>
+    </div>
+    <div class="footer-right">
+      <h4>Orari di apertura</h4>
+      <p>Lun - Ven: 8:30 – 12:30 / 14:00 – 20:00<br>Sab: 8:30 – 12:30</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/p/Poliambulatorio-Luigi-Einaudi-100014016342183/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <img src="icons/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/TUA_PAGINA" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="icons/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.doctolib.it/TUA_PAGINA" target="_blank" rel="noopener noreferrer" aria-label="Doctolib">
+          <img src="icons/doctolib.png" alt="Doctolib">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Poliambulatorio Luigi Einaudi - P.I. 03611100045 - <a href="/privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
+
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modal">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <h3>Richiedi un appuntamento</h3>
+    <form id="modalForm" class="modal-form">
+      <label>Nome<input type="text" name="name" required></label>
+      <label>Email<input type="email" name="email" required></label>
+      <label>Telefono<input type="tel" name="phone"></label>
+      <label>Messaggio<textarea name="message" rows="4"></textarea></label>
+      <div class="modal-actions">
+        <button class="btn btn-primary" type="submit">Invia richiesta</button>
+        <button class="btn btn-outline" type="button" id="modalCancel">Annulla</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+
+<!-- Script per caricare i prossimi eventi -->
+<script>
+// Carica i prossimi eventi dalla pagina eventi
+fetch('eventi.json')
+  .then(response => {
+    if (!response.ok) {
+      throw new Error('Errore nel caricamento degli eventi');
+    }
+    return response.json();
+  })
+  .then(eventi => {
+    const container = document.getElementById('prossimi-eventi-list');
+    container.innerHTML = "";
+
+    // Filtra solo gli eventi con Prossimo: "true"
+    const prossimi = eventi.filter(ev => 
+      ev.Prossimo && ev.Prossimo.toLowerCase() === "true" && ev.Titolo
+    );
+
+    if (prossimi.length === 0) {
+      container.innerHTML = `
+        <div class="no-events">
+          <h3>Nessun evento in programma</h3>
+          <p>Al momento non ci sono eventi prossimi. Controlla presto per aggiornamenti!</p>
+        </div>
+      `;
+      return;
+    }
+
+    // Ordina per data
+    prossimi.sort((a,b) => new Date(a.Data) - new Date(b.Data));
+
+    // Crea le card per ogni evento prossimo
+    prossimi.forEach(ev => {
+      const div = document.createElement('div');
+      div.className = "event-card prossimo";
+      
+      div.innerHTML = `
+        <div class="event-content">
+          ${ev.Foto ? `
+            <div class="event-image">
+              <img src="${ev.Foto}" alt="${ev.Titolo}">
+            </div>
+          ` : ""}
+          <h3>${ev.Titolo}</h3>
+          <div class="event-date">${ev.Data}</div>
+          <p class="event-description">${ev.Descrizione}</p>
+        </div>
+      `;
+      
+      container.appendChild(div);
+    });
+  })
+  .catch(err => {
+    console.error('Errore nel caricamento degli eventi:', err);
+    document.getElementById('prossimi-eventi-list').innerHTML = `
+      <div class="no-events">
+        <h3>Errore nel caricamento</h3>
+        <p>Non è stato possibile caricare gli eventi. Riprova più tardi.</p>
+      </div>
+    `;
+  });
+</script>
+</body>
+</html>
